@@ -1,5 +1,4 @@
-import React from 'react'
-import { imagepath } from '../../utils/constant'
+
 import MovieCard from './MovieCard'
 
 
