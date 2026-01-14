@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+
 import { imagepath } from '../../utils/constant'
 import { Link } from 'react-router-dom'
 
