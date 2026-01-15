@@ -1,6 +1,4 @@
-import  { useEffect, useState } from "react";
-
-import { imagepath } from "../../utils/constant";
+import  { useEffect, useState } from "react"
 import { baseApi } from "../../api/axiosInstance";
 import HomeCarousel from "./HomeCarousel";
 import HomecarouselList from "./HomecarouselList";
