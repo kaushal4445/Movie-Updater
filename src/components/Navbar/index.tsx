@@ -63,7 +63,7 @@ const fetchSearch = async() => {
           <div className="absolute z-50 left-0 w-full bg-zinc-800 rounded-xl">
              <div className="py-3 pl-5">
             <div className=" flex flex-col gap-2 h-fit max-h-[380px] overflow-y-auto">
-            {searchList.length> 0  && searchList.map((item,ind) => 
+            {searchList.length> 0  && searchList.map((ind) => 
             <CarouselMiniCarrd  carouselMovies={searchList} ind={ind} item={ind} />
              )}
             </div>
