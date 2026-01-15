@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+
 import type { CarouselMovieType } from "./HomeSlider";
 import CarouselMiniCarrd from "./CarouselMiniCarrd";
 
