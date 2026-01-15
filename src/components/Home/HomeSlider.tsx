@@ -1,5 +1,5 @@
 import  { useEffect, useState } from "react";
-import { LuThumbsUp } from "react-icons/lu";
+
 import { imagepath } from "../../utils/constant";
 import { baseApi } from "../../api/axiosInstance";
 import HomeCarousel from "./HomeCarousel";
