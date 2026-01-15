@@ -1,4 +1,4 @@
-import React from "react";
+
 import type { CarouselMovie, CarouselMovieType } from "./HomeSlider";
 import { imagepath } from "../../utils/constant";
 import { LuThumbsUp } from "react-icons/lu";
