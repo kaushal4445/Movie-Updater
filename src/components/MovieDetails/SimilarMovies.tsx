@@ -20,7 +20,7 @@ function SimilarMovies({movieId}: {movieId: string}) {
     const fetchSimilarMovies = async(page: number) => {
         try{
           const response = await baseApi.get(`/3/movie/${movieId}/similar?language=en-US&page=${page}`)
-        setMovies(prev => [...prev,...response.data.results])
+        // setMovies(prev => [...prev,...response.data.results])
         }catch(error){
             console.log("Similar movies err", error)
         }
@@ -28,7 +28,7 @@ function SimilarMovies({movieId}: {movieId: string}) {
     }
 const handleLoadMore = () => {
      fetchSimilarMovies(page+1)
-     setPage(prev => prev + 1)
+     // setPage(prev => prev + 1)
 
 }
 
