@@ -2,10 +2,14 @@ import {useEffect, useState} from 'react'
 import { baseApi } from '../../api/axiosInstance'
 import YouTube from 'react-youtube'
 
-interface TrailerType {
+ export interface TrailerType {
   key: string;
   name: string;
   type: string;
+}
+
+interface TrailerProps {
+  movieId: string;
 }
 
 function Trailer({movieId}:{movieId: string}) {
