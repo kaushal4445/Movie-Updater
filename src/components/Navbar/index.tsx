@@ -1,4 +1,5 @@
-import { useState, ChangeEvent, useEffect } from "react";
+import { useState, useEffect } from "react";
+import type { ChangeEvent } from "react";
 import { Link } from "react-router-dom";
 import { baseApi } from "../../api/axiosInstance";
 import CarouselMiniCarrd from "../Home/CarouselMiniCarrd";
@@ -63,7 +64,7 @@ const fetchSearch = async() => {
           <div className="absolute z-50 left-0 w-full bg-zinc-800 rounded-xl">
              <div className="py-3 pl-5">
             <div className=" flex flex-col gap-2 h-fit max-h-[380px] overflow-y-auto">
-            {searchList.length> 0  && searchList.map((ind) => 
+            {searchList.length> 0  && searchList.map((item,index) => 
             <CarouselMiniCarrd key = {item.id} carouselMovies={searchList} ind={index} item={item} />
              )}
             </div>
