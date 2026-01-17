@@ -12,7 +12,7 @@ interface TrailerProps {
   movieId: string;
 }
 
-function Trailer({movieId}:{movieId: string}) {
+function Trailer({movieId}:TrailerProps) {
     const [trailer, setTrailers] = useState<TrailerType[]>([])
     const fetchTrailers = async() => {
         try{
