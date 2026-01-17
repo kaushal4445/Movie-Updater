@@ -2,6 +2,12 @@ import {useEffect, useState} from 'react'
 import { baseApi } from '../../api/axiosInstance'
 import YouTube from 'react-youtube'
 
+interface TrailerType {
+  key: string;
+  name: string;
+  type: string;
+}
+
 function Trailer({movieId}:{movieId: string}) {
     const [trailer, setTrailers] = useState<{key: string}[]>([])
     const fetchTrailers = async() => {
