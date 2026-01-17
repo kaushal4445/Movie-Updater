@@ -5,7 +5,7 @@ import { baseApi } from "../../api/axiosInstance";
 import CarouselMiniCarrd from "../Home/CarouselMiniCarrd";
 
 export interface CarouselMovieType {
-  id: number;
+  ind: number;
   backdrop_path: string;
   poster_path: string;
   title: string;
