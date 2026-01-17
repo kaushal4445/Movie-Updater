@@ -13,7 +13,7 @@ interface TrailerProps {
 }
 
 function Trailer({movieId}:{movieId: string}) {
-    const [trailer, setTrailers] = useState<{key: string}[]>([])
+    const [trailer, setTrailers] = useState<TrailerType[]>([])
     const fetchTrailers = async() => {
         try{
           const response = await baseApi.get(`/3/movie/${movieId}/videos?language=en-US`)
