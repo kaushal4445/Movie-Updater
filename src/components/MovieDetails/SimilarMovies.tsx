@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 
 import { baseApi } from '../../api/axiosInstance'
 import Movielist from '../Home/MovieList'
