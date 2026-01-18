@@ -15,11 +15,19 @@ function HomecarouselList({next, carouselMovies} : HomecarouselListProps){
             <h1 className=" font-bold text-xl text-yellow-500">Up Next</h1>
             {
                 next.map((item,ind) => (
-               <CarouselMiniCarrd  carouselMovies={carouselMovies}item={movie} ind={ind}/>
-                ))
-            }
-        </div>
-    )
+            const movie = carouselMovies[index]; // ✅ FIX
+        if (!movie) return null;
+
+        return (
+          <CarouselMiniCarrd
+            key={movie.id}
+            item={movie}     // ✅ now defined
+            ind={ind}
+          />
+        );
+      })}
+    </div>
+  );
 }
 
 export default HomecarouselList;
