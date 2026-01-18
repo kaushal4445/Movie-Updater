@@ -3,14 +3,16 @@ import { Link } from 'react-router-dom'
 import { imagepath } from '../../utils/constant'
 import { LuThumbsUp } from 'react-icons/lu'
 
-// export interface CarouselMovieType {
-//   id: number;
-//   backdrop_path: string;
-//   poster_path: string;
-//   title: string;
-//   overview: string;
-//   vote_count: number;
-// }
+
+
+export interface CarouselMovieType {
+  id: number;
+  backdrop_path: string;
+  poster_path: string;
+  title: string;
+  overview: string;
+  vote_count: number;
+}
 
 interface  CarouselMiniCarrdProps{
     carouselMovies: CarouselMovieType[]
