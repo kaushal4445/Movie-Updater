@@ -14,7 +14,8 @@ export interface CarouselMovieType {
 
 interface  CarouselMiniCarrdProps{
     carouselMovies: CarouselMovieType[]
-    item: number
+     item: CarouselMovieType; 
+  
     ind: number
 }
 
