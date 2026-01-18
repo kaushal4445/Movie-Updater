@@ -1,7 +1,7 @@
-import { useState } from "react";
+// import { useState } from "react";
 // import { Link } from 'react-router-dom'
-import { imagepath } from '../../utils/constant'
-import { LuThumbsUp } from 'react-icons/lu'
+// import { imagepath } from '../../utils/constant'
+// import { LuThumbsUp } from 'react-icons/lu'
 
 
 
