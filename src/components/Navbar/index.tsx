@@ -3,9 +3,11 @@ import type { ChangeEvent } from "react";
 import { Link } from "react-router-dom";
 import { baseApi } from "../../api/axiosInstance";
 import CarouselMiniCarrd from "../Home/CarouselMiniCarrd";
+  import { CarouselMovieType } from "../../types/movie";
+
 
 export interface CarouselMovieType {
-  ind: number;
+  id: number;
   backdrop_path: string;
   poster_path: string;
   title: string;
