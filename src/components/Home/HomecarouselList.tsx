@@ -15,7 +15,7 @@ function HomecarouselList({next, carouselMovies} : HomecarouselListProps){
             <h1 className=" font-bold text-xl text-yellow-500">Up Next</h1>
             {
                 next.map((item,ind) => (
-               <CarouselMiniCarrd  carouselMovies={carouselMovies}item={item} ind={ind}/>
+               <CarouselMiniCarrd  carouselMovies={carouselMovies}item={movie} ind={ind}/>
                 ))
             }
         </div>
