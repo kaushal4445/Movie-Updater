@@ -3,14 +3,14 @@ import { Link } from 'react-router-dom'
 import { imagepath } from '../../utils/constant'
 import { LuThumbsUp } from 'react-icons/lu'
 
-export interface CarouselMovieType {
-  id: number;
-  backdrop_path: string;
-  poster_path: string;
-  title: string;
-  overview: string;
-  vote_count: number;
-}
+// export interface CarouselMovieType {
+//   id: number;
+//   backdrop_path: string;
+//   poster_path: string;
+//   title: string;
+//   overview: string;
+//   vote_count: number;
+// }
 
 interface  CarouselMiniCarrdProps{
     carouselMovies: CarouselMovieType[]
@@ -37,7 +37,7 @@ function CarouselMiniCarrd({ item, ind}:  CarouselMiniCarrdProps) {
                     <h1 className="text-md  text-zinc-300 line-clamp-3">{[item].overview}</h1>
                     </div>
                     <div className="flex gap-1 text-center">  <LuThumbsUp />
-                        <h2>{carouselMovies[item]?.vote_count}</h2>
+                        <h2>{[item]?.vote_count}</h2>
                         </div>
                         </div>
                         </div>
